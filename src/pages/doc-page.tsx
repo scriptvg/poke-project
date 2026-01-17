@@ -367,14 +367,7 @@ export default function DocPage() {
                 ))}
             </div>
 
-            <footer className="mt-32 pt-8 border-t flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-                <p>© {new Date().getFullYear()} Composable Pokedex Architecture Lab.</p>
-                <div className="flex gap-6">
-                    <Link to="/" className="hover:text-foreground transition-colors">Github</Link>
-                    <Link to="/" className="hover:text-foreground transition-colors">Twitter</Link>
-                    <Link to="/" className="hover:text-foreground transition-colors">PokeAPI</Link>
-                </div>
-            </footer>
+
         </div>
     );
 }

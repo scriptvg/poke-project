@@ -205,6 +205,22 @@ export default function DocLayout() {
           </div>
         </aside>
       </div>
+      <footer className="mt-32 p-4 border-t flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="flex gap-6 lg:gap-12 items-center justify-between w-full container px-8 mx-auto">
+          <p>© {new Date().getFullYear()} Allan Velez - Composable Pokedex Architecture Lab. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Button variant="link">
+               <a href="https://github.com/scriptvg/poke-project" target="_blank" className="hover:text-foreground transition-colors">Github</a>
+            </Button>
+            <Button variant="link">
+               <a href="www.linkedin.com/in/allan-josé-vélez-gonzález" target="_blank" className="hover:text-foreground transition-colors">LinkedIn</a>
+            </Button>
+            <Button variant="link">
+               <Link to="/docs/introduction" className="hover:text-foreground transition-colors">Docs</Link>
+            </Button>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
