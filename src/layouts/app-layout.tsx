@@ -70,8 +70,6 @@ export default function AppLayout() {
             <NavigationMenu className="hidden md:flex">
               <NavigationMenuList className="gap-2">
                 <ListItem title="Home" href="/" />
-                <ListItem title="Pokedex" href="/pokedex" />
-                <ListItem title="Contact" href="/contact" />
                 <ListItem title="Docs" href="/docs/introduction" />
               </NavigationMenuList>
             </NavigationMenu>
