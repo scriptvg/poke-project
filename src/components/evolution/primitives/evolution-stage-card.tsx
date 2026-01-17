@@ -17,7 +17,7 @@ interface EvolutionStageCardProps {
 export function EvolutionStageCard({
     pokemonName,
     className,
-}: Omit<EvolutionStageCardProps, "isFirst">) {
+}: EvolutionStageCardProps) {
     const { data: pokemon, isLoading } = useQuery({
         queryKey: ["pokemon", pokemonName],
         queryFn: () => PokemonService.getPokemonByNameOrId(pokemonName),
